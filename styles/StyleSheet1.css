@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.character-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.character-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+.character-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.character-info {
+    padding: 15px;
+    text-align: center;
+}
+.character-name {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+.character-class {
+    font-size: 1.2em;
+    color: #aaaaaa;
+    margin-bottom: 10px;
+}
+.character-abilities {
+    text-align: left;
+    margin-top: 10px;
+}
+.character-abilities ul {
+    padding-left: 20px;
+}
+.character-abilities li {
+    margin-bottom: 5px;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 30px;
+    overflow-y: auto;
+    display: none;
+
+}
+
+.modal_main {
+    position: relative;
+    max-width: 600px;
+    background-color:#1e1e1e;
+    margin: auto;
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 13px;
+
+}
+.modal_main img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 16px;
+    object-fit:cover;
+}
+
+
+.modal_title {
+    margin-bottom: 30px;
+
+}
+
+.modal_close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+}
